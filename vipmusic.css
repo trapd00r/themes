@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("vipmusic.org") {
+
+body {
+background: #000000 !important
+}
+
+}

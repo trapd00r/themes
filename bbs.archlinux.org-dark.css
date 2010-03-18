@@ -1,0 +1,50 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("bbs.archlinux.org") {
+
+#brdheader .box, #punredirect.pun{
+background-image: url(http://stashbox.org/485258/2.png) !important;
+}
+
+body{
+background: url(http://stashbox.org/485257/1.png)repeat-x top left #111111 !important;}
+
+td.tcl, td.tcr, #idx1>.box, #idx2>.box, #idx3>.box, #idx4>.box,
+#brdstats.block>.box, #brdfooter.block>.box, #vf.blocktable>.box, .box>form,
+.rowodd>.box>.inbox, .roweven>.box>.inbox, .roweven>.box, .rowodd>.box, h2,
+.fakeform, #searchform.blockform>.box, .pun>.blockform>.box,
+#users1.blocktable>.box,.block2col >.blockmenu >.box, .rowodd, .roweven,
+#postpreview.blockpost>.box, #punredirect.pun>.block>.box>.inbox,
+#punredirect.pun>.block>.box, #helpfile>.box{
+background-color: #252525 !important;
+border-color: #252525 !important}
+
+th.tcl, th.tcr, .tc2, .tc3, blockquote, .codebox, .infldset>dl>dd{
+background-color: #252525 !important;
+border-color: #111111 !important}
+
+.tcl, .tc3, .tc2, .tcr, dd, dd>a:hover, .tcr>a:hover, h3>a:hover,
+.conr>li>a:hover, .conl>li, .linkst>.inbox>ul>li>a:hover, .pagelink>a:hover,
+ .tclcon>a:hover, .tclcon>strong>a:hover, .postlink>a:hover, .conr>li>a:hover,
+.subscribelink>a:hover, .postmsg>p, .postsignature, .incqbox, dt>strong>a:hover,
+ .postmsg>p>a:hover, .postsignature>strong>a:hover, .postsignature>a:hover,
+ .postquote>a:hover, .bblinks>li>a:hover, .incqbox>p>a:hover, .infldset>dl>dt,
+ .clearb, .conl, .infldset, #profile1>p, .isactive>a, .postleft>dl>dt>strong,
+ .linkst>.inbox>ul>li, .pun select, .postlinksb>.inbox>ul>li, .postfootleft>p,
+ #punredirect.pun>.block>.box>.inbox>p,
+ #punredirect.pun>.block>.box>.inbox>p>a:hover, .newtext>a:hover, .tc2>a:hover,
+.postlinksb>.inbox>ul>li>a:hover, #helpfile>.box, .postedit>a:hover{
+color: #fff !important}
+
+.postleft, .postfootleft, .blockpost label, .pun select{
+background-color: #252525 !important}
+
+
+.postright, .postfootright{
+background-color: #252525 !important;
+border-color: #252525 !important}
+
+.icon{border-color: #999999 !important;}
+.inew{border-color: #0771a6 !important;}
+}
+
