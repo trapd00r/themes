@@ -1,11 +1,9 @@
-# sanecat.theme
-# by trapd00r
+#
 #
 # For best experience: 
 # /statusbar window remove time
 # /statusbar window remove user
 # /statusbar window remove window_empty
-# /statusbar window remove window
 # /statusbar topic DISABLE
 
 # default foreground color (%N) - -1 is the "default terminal color"
@@ -24,10 +22,10 @@ abstracts = {
   ##
 
   # text to insert at the beginning of each non-message line
-  line_start = "·";
+  line_start = " > ";
 
   # grey
-  timestamp = "%K$*%n";
+  timestamp = "%g$*%n";
 
   # any kind of text that needs hilighting, default is to bold
   hilight = "%G$*%_";
@@ -101,7 +99,7 @@ abstracts = {
 
   # $0 = nick mode, $1 = nick
   ownmsgnick = "{msgnick $0 $1-}%W";
-  ownnick = "%K$*%n";
+  ownnick = "%g$*%n";
 
   # public message in channel, $0 = nick mode, $1 = nick
   pubmsgnick = "{msgnick $0$1-}";
@@ -145,10 +143,10 @@ abstracts = {
   ownaction = "{action %p$*}";
 
   # own action with target, both private/public
-  ownaction_target = "{action_core $0}%p:%c$1%n ";
+  ownaction_target = "{action_core $0}%Y:%c$1%n ";
 
   # private action sent by others
-  pvtaction = "%p (*) $*%n ";
+  pvtaction = "%y (*) $*%n ";
   pvtaction_query = "{action $* }";
 
   # public action sent by others
@@ -231,8 +229,8 @@ abstracts = {
   # used for anything.
   sbend = " ";
 
- # topicsbstart = "{sbstart $*}";
- # topicsbend = "{sbend $*}";
+  # topicsbstart = "{sbstart $*}";
+  # topicsbend = "{sbend $*}";
 
   prompt = "%b$*%B> ";
 
@@ -256,22 +254,22 @@ abstracts = {
   sb_act_hilight_color = "$0$1-%n";
 
   #usercount
-#  sb_usercount = "{sb total:%w$0%n $1-}";
-#  sb_uc_ircops = "opers:%w$*%n";
-#  sb_uc_ops = "chanop:%w$*%n";
-#  sb_uc_halfops = "halfop:%w$*%n";
-#  sb_uc_voices = "voice:%w$*%n";
-#  sb_uc_normal = "peon:%w$*%n";
-#  sb_uc_space = " ";
+  #  sb_usercount = "{sb total:%w$0%n $1-}";
+  #  sb_uc_ircops = "opers:%w$*%n";
+  #  sb_uc_ops = "chanop:%w$*%n";
+  #  sb_uc_halfops = "halfop:%w$*%n";
+  #  sb_uc_voices = "voice:%w$*%n";
+  #  sb_uc_normal = "peon:%w$*%n";
+  #  sb_uc_space = " ";
 
   #network activity, netact.pl
-#  nact_display = "%B(%b$3%n%B)%n$0%G>%W$1%R>%n$2%B(%b$4%B)%n";
-#  nact_display = "";
+  #  nact_display = "%B(%b$3%n%B)%n$0%G>%W$1%R>%n$2%B(%b$4%B)%n";
+  #  nact_display = "";
 };
 
 formats = {
   "fe-common/core" = {
-    pubmsg = "{pubmsgnick $2 {pubnick $[-11]0}}$1";
+    pubmsg = "{pubmsgnick $2 {pubnick \00310$0}}$1";
     join = "%gjoin       %G>%n {nick %W$0%n}!%n{chanhost_hilight $1}";
     part = "%cpart       %C<%n {nick %w$0%n}!%n{chanhost_hilight $1} {reason $3}";
     kick = "%rkick       %R<%n {nick %w$0%n} {reason %w$3%n} by {nick $2}";
@@ -287,6 +285,7 @@ formats = {
     pubmsg_channel = "{pubmsgnick $3 {pubnick $[-11]0}{msgchannel $1}}$2";
     own_msg_private_query = "{ownprivmsgnick {ownprivnick $[-11]2}}$1";
     msg_private_query = "{privmsgnick $[-11]0}$2";
+    timestamp = "{timestamp %%H:%%M:%%S} â–";
   };
   "fe-common/irc" = {
     netsplit = "{netsplit %rsplit     %R<<%n} {server $0} %w<-%r\\->%n {server %R$1%n}: [$2]";
@@ -299,3 +298,12 @@ formats = {
     action_public = "{pubaction  $0}%|$1";
     who = "%#{channelhilight $[-10]0} {nick %n$[9]1%n} $[3]2 $[2]3 {comment {hilight $[10]6}} {comment $[!18]7} {chanhost %n$4@$5}";
   };
+
+  # Script Addons....
+
+  # kills.pl reformat
+  "Irssi::Script::kills" = {
+    kill_public = "%rkilled     ¤%n {channick %w$0%n}!{chanhost $1%n} {reason %w$4%n} by {nick %W$2%n}$3";
+  };
+};
+
