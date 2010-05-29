@@ -35,7 +35,7 @@ th.tcl, th.tcr, .tc2, .tc3, blockquote, .codebox, .infldset>dl>dd {
  #punredirect.pun>.block>.box>.inbox>p,
  #punredirect.pun>.block>.box>.inbox>p>a:hover, .newtext>a:hover, .tc2>a:hover,
 .postlinksb>.inbox>ul>li>a:hover, #helpfile>.box, .postedit>a:hover {
-  color: #e5d8b8 !important;
+  color: #eee !important;
   border-width: 1px !important;
   border-color: #111111 !important;
 }
@@ -63,8 +63,12 @@ th.tcl, th.tcr, .tc2, .tc3, blockquote, .codebox, .infldset>dl>dd {
 }
 
 .incqbox {
-  background-color: #111111 !important;
-  color: #ba002c !important;
+  background-color: #121212 !important;
+  color: #AC0029 !important;
+}
+
+a {
+  color: #566771 !important;
 }
 
 .icon{
@@ -75,3 +79,4 @@ th.tcl, th.tcr, .tc2, .tc3, blockquote, .codebox, .infldset>dl>dd {
 }
 
 }
+
