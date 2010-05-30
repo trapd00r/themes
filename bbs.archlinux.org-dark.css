@@ -42,7 +42,7 @@ th.tcl, th.tcr, .tc2, .tc3, blockquote, .codebox, .infldset>dl>dd {
 
 .incqbox, .incqbox>p>a:hover {
   background-color: #121212 !important;
-  color: #fff !important;
+  color: #92cef7 !important;
   border-width: 1px !important;
   border-color: #111111 !important;
 }
@@ -62,10 +62,6 @@ th.tcl, th.tcr, .tc2, .tc3, blockquote, .codebox, .infldset>dl>dd {
   border-width: 2px !important;
 }
 
-.incqbox {
-  background-color: #121212 !important;
-  color: #AC0029 !important;
-}
 
 a {
   color: #566771 !important;
