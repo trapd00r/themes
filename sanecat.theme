@@ -1,4 +1,6 @@
-#
+# sanecat irssi theme
+# Maintainer: Magnus Woldrich <trapd00r@trapd00r.se>
+# Last updated: Fri Jun 18 06:51:46 CEST 2010
 #
 # For best experience: 
 # /statusbar window remove time
@@ -25,10 +27,10 @@ abstracts = {
   line_start = " > ";
 
   # grey
-  timestamp = "%g$*%n";
+  timestamp = "%2%k$*%N";
 
   # any kind of text that needs hilighting, default is to bold
-  hilight = "%G$*%_";
+  hilight = "%W$*%_";
 
   # any kind of error message, default is bright red
   error = "%R$*%n";
@@ -78,7 +80,7 @@ abstracts = {
 
   # the basic styling of how to print message, $0 = nick mode, $1 = nick
   #msgnick = "%R<%n%_$0%_$1%R>%n %|";
-  msgnick = "%|%n%_$0%_$1%R >%n %|";
+  msgnick = "%|%n%_$0%_$1%R %n%|";
   #msgnick = "$0%_$1%n %R>%n %|";
 
   # message from you is printed. "msgownnick" specifies the styling of the
@@ -98,7 +100,7 @@ abstracts = {
   #  privmsgnick = "%K{msgnick  %R$*%K}%n";
 
   # $0 = nick mode, $1 = nick
-  ownmsgnick = "{msgnick $0 $1-}%W";
+  ownmsgnick = "{msgnick $0 $1-}%w";
   ownnick = "%g$*%n";
 
   # public message in channel, $0 = nick mode, $1 = nick
@@ -106,8 +108,9 @@ abstracts = {
   pubnick = "%N$*%n";
 
   # public message in channel meant for me, $0 = nick mode, $1 = nick
-  pubmsgmenick = "{msgnick $0$1-}";
-  menick = "%R$*%n";
+  pubmsgmenick = "{msgnick $0$1}%y>%Y>%w ";
+  menick = "%Y$*%n";
+
 
   # public highlighted message in channel
   # $0 = highlight color, $1 = nick mode, $2 = nick
@@ -183,11 +186,11 @@ abstracts = {
   # /names list
   names_prefix = "           %r¤%n ";
   names_nick = "[%_$0%_$1-] ";
-  names_nick_op = "%r{names_nick $*}%n";
+  names_nick_op = "%g{names_nick $*}%n";
   names_nick_halfop = "%r{names_nick $*}%n";
   names_nick_voice = "%y{names_nick $*}%n";
   names_users = "[%w$*%n]";
-  names_channel = "%r$*%n";
+  names_channel = "%b$*%n";
 
   # DCC
   dcc = "%g$*%n";
@@ -249,7 +252,7 @@ abstracts = {
   # public message
   sb_act_msg = "%W$*";
   # hilight
-  sb_act_hilight = "%G$*";
+  sb_act_hilight = "%C$*";
   # hilight with specified color, $0 = color, $1 = text
   sb_act_hilight_color = "$0$1-%n";
 
@@ -269,21 +272,21 @@ abstracts = {
 
 formats = {
   "fe-common/core" = {
-    pubmsg = "{pubmsgnick $2 {pubnick \00310$[-9]0}}$1";
+    pubmsg = "{pubmsgnick $2 {pubnick \00305$[-9]0}}$1";
     join = "%gjoin       %G>%n {nick %W$0%n}!%n{chanhost_hilight $1}";
     part = "%cpart       %C<%n {nick %w$0%n}!%n{chanhost_hilight $1} {reason $3}";
     kick = "%rkick       %R<%n {nick %w$0%n} {reason %w$3%n} by {nick $2}";
     quit = "%Kquit       %K<%n {nick %K$0%n}!%n{chanhost_hilight $1} {reason $2}";
     nick_changed = "%ynick       %y~%n {nick %w$0%n} %Nis now {nick %W$1%n}";
 
-    own_msg = "{ownmsgnick $2 {ownnick $[-11]0}}$1";
-    own_msg_channel = "{ownmsgnick $3 {ownnick $[-11]0}{msgchannel $1}}$2";
-    pubmsg_me = "{pubmsgmenick $2 {menick $[-11]0}}$1";
-    pubmsg_me_channel = "{pubmsgmenick $3 {menick $[-11]0}{msgchannel $1}}$2";
-    pubmsg_hilight = "{pubmsghinick $0 $3 $[-11]1}$2";
-    pubmsg_hilight_channel = "{pubmsghinick $0 $4 $[-11]1{msgchannel $2}}$3";
-    pubmsg_channel = "{pubmsgnick $3 {pubnick $[-11]0}{msgchannel $1}}$2";
-    own_msg_private_query = "{ownprivmsgnick {ownprivnick $[-11]2}}$1";
+    own_msg = "{ownmsgnick $2 {ownnick $[-9]0}}$1";
+    own_msg_channel = "{ownmsgnick $3 {ownnick $[-9]0}{msgchannel $1}}$2";
+    pubmsg_me = "{pubmsgmenick $2 {menick $[-9]0}}$1";
+    pubmsg_me_channel = "{pubmsgmenick $3 {menick $[-9]0}{msgchannel $1}}$2";
+    pubmsg_hilight = "{pubmsghinick $0 $3 $[-5]1}$2";
+    pubmsg_hilight_channel = "{pubmsghinick $0 $4 $[-5]1{msgchannel $2}}$3";
+    pubmsg_channel = "{pubmsgnick $3 {pubnick $[-9]0}{msgchannel $1}}$2";
+    own_msg_private_query = "{ownprivmsgnick {ownprivnick $[-9]2}}$1";
     msg_private_query = "{privmsgnick $[-11]0}$2";
     timestamp = "{timestamp %%H:%%M:%%S} â–";
   };
