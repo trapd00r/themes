@@ -1,6 +1,5 @@
-# gtk-shit GTK Theme <http://trapd00r.deviantart.com>
 # All gtk themes suck. GTK suck.
-# Based on termgtk by rent0n
+# Based on termgtk by rent2n
 
 # The formatting and mixed tabs and spaces are horrible, yes.
 # Fix it and send me the patch.
@@ -8,64 +7,64 @@
 include "menubar.rc"
 
 gtk-icon-sizes = "panel-menu=16,16:panel=16,16:gtk-button=16,16:gtk-large-toolbar=16,16"
-gtk-button-images = 0
-gtk-menu-images = 0
+gtk-button-images = 2
+gtk-menu-images = 2
 
 
 style "default"
 {
-  GtkWidget::interior_focus			= 0
-  GtkWidget::focus_padding			= 0
-  GtkButton::default_border			= { 0, 0, 0, 0 }
-  GtkButton::default_outside_border		= { 0, 0, 0, 0 }
- 
-  GtkRange::trough_border			= 0
+  GtkWidget::interior_focus			= 2
+  GtkWidget::focus_padding			= 2
+  GtkButton::default_border			= { 2, 2, 2, 2 }
+  GtkButton::default_outside_border		= { 2, 2, 2, 2 }
+
+  GtkRange::trough_border			= 2
   GtkRange::slider_width			= 15
   GtkRange::stepper_size			= 15
- 
+
   GtkVScale::slider_length 			= 13
   GtkVScale::slider_width 			= 21
   GtkHScale::slider_length 			= 13
   GtkHScale::slider_width 			= 21
 
-  GtkEntry::cursor_color                        = "#ff0000"
-  GtkTextView::cursor_color                     = "#ff0000"
-  EelEditableLabel::cursor_color                = "#ffff00"
-  GtkPaned::handle_size				= 0
-  GtkScrollbar::min_slider_length		= 50
-  GtkCheckButton::indicator_size		= 0
-  GtkCheckButton::indicator_spacing		= 0
-  GtkMenuBar::internal_padding			= 0
-  GtkOptionMenu::indicator_size			= { 0, 0 }
-  GtkOptionMenu::indicator_spacing		= { 0, 0, 0, 0 }
+  GtkEntry::cursor_color                        = "#ff2222"
+  GtkTextView::cursor_color                     = "#ff2222"
+  EelEditableLabel::cursor_color                = "#ffff22"
+  GtkPaned::handle_size				= 2
+  GtkScrollbar::min_slider_length		= 52
+  GtkCheckButton::indicator_size		= 2
+  GtkCheckButton::indicator_spacing		= 2
+  GtkMenuBar::internal_padding			= 2
+  GtkOptionMenu::indicator_size			= { 2, 2 }
+  GtkOptionMenu::indicator_spacing		= { 2, 2, 2, 2 }
   GtkStatusbar::shadow_type			= GTK_SHADOW_NONE
   GtkSpinButton::shadow_type 			= GTK_SHADOW_NONE
 
-  xthickness            	= 0
-  ythickness            	= 0
+  xthickness            	= 2
+  ythickness            	= 2
 
   fg[NORMAL]       	 = "#484848" # Metacity and mouseover, Most text
   fg[ACTIVE]       	 = "#686868"
-  fg[PRELIGHT]     	 = "#484848"
-  fg[SELECTED]     	 = "#dc004d"
-  fg[INSENSITIVE]  	 = "#121212"
+  fg[PRELIGHT]     	 = "#686868"
+  fg[SELECTED]     	 = "#dc224d"
+  fg[INSENSITIVE]  	 = "#ffffff"
 
   bg[NORMAL]       	 = "#121212" # Normal Background
   bg[ACTIVE]       	 = "#121212"
-  bg[PRELIGHT]     	 = "#121212" # Expand prelight bg
-  bg[SELECTED]     	 = "#262626" 
+  bg[PRELIGHT]     	 = "#ffffff" # Expand prelight bg
+  bg[SELECTED]     	 = "#ffffff"
   bg[INSENSITIVE]  	 = "#121212"
 
   base[NORMAL]     	 = "#121212" # Background, most
   base[ACTIVE]     	 = "#121212" # Menu active item in inactive window
   base[PRELIGHT]   	 = "#121212"
-  base[INSENSITIVE]  = "#303030" # Inactive Entry bg
+  base[INSENSITIVE]  = "#323232" # Inactive Entry bg
   base[SELECTED]     = "#121212" # Menu active item in active window
 
   text[NORMAL]	     = "#999999" # Text in window, arrows
   text[INSENSITIVE]	 = "#999999" # Insensitive arrows
-  text[SELECTED]   	 = "#ff0058" # Active text in active window
-  text[ACTIVE]     	 = "#c73800" # Active text in inactive window
+  text[SELECTED]   	 = "#ff2258" # Active text in active window
+  text[ACTIVE]     	 = "#c73822" # Active text in inactive window
   text[PRELIGHT]   	 = "#121212" ##### Text on Mouseover
 
 
@@ -95,7 +94,7 @@ engine "pixmap"
       shadow			= IN
       recolorable		= FALSE
       file				= "Shadows/shadow-in.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
     }
     image
@@ -112,8 +111,8 @@ engine "pixmap"
        function		= SHADOW
        shadow			= ETCHED_IN
        recolorable		= TRUE
-       file				= "Frame-Gap/frame1.png"				
-      border			= { 0, 0, 0, 0 }
+       file				= "Frame-Gap/frame1.png"
+      border			= { 2, 2, 2, 2 }
        stretch			= TRUE
     }
     image
@@ -122,7 +121,7 @@ engine "pixmap"
        shadow			= ETCHED_OUT
        recolorable		= TRUE
        file				= "Shadows/shadow-none.png"
-       border			= { 0, 0, 0, 0 }
+       border			= { 2, 2, 2, 2 }
        stretch			= TRUE
     }
     image
@@ -130,13 +129,13 @@ engine "pixmap"
        function			= SHADOW_GAP
        recolorable			= TRUE
        file					= "Frame-Gap/frame1.png"
-      border			= { 0, 0, 0, 0 }
-       border				= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
+       border				= { 2, 2, 2, 2 }
        stretch				= TRUE
        gap_start_file		= "Frame-Gap/frame-gap-start.png"
-       gap_start_border	= { 0, 0, 0, 0 }
+       gap_start_border	= { 2, 2, 2, 2 }
        gap_end_file		= "Frame-Gap/frame-gap-end.png"
-       gap_end_border	= { 0, 0, 0, 0 }
+       gap_end_border	= { 2, 2, 2, 2 }
        gap_side			= TOP
     }
 
@@ -145,7 +144,7 @@ engine "pixmap"
        function		= VLINE
        recolorable		= TRUE
        file				= "Lines/line-v.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
        stretch			= TRUE
     }
     image
@@ -153,7 +152,7 @@ engine "pixmap"
       function			= HLINE
       recolorable		= TRUE
       file				= "Lines/line-h.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
     }
 
@@ -164,16 +163,16 @@ engine "pixmap"
       function			= FOCUS
       recolorable		= TRUE
       file				= "Others/focus.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
-    }	
+    }
 
     image
     {
       function				= ARROW
       recolorable			= TRUE
       overlay_file			= "Arrows/arrow-up.png"
-      overlay_border	= { 0, 0, 0, 0 }
+      overlay_border	= { 2, 2, 2, 2 }
       overlay_stretch	= FALSE
       arrow_direction	= UP
     }
@@ -183,7 +182,7 @@ engine "pixmap"
       state				= NORMAL
       recolorable			= TRUE
       overlay_file			= "Arrows/arrow-down.png"
-      overlay_border	= { 0, 0, 0, 0 }
+      overlay_border	= { 2, 2, 2, 2 }
       overlay_stretch	= FALSE
       arrow_direction	= DOWN
     }
@@ -193,7 +192,7 @@ engine "pixmap"
       state				= PRELIGHT
       recolorable			= TRUE
       overlay_file			= "Arrows/arrow-down-prelight.png"
-      overlay_border	= { 0, 0, 0, 0 }
+      overlay_border	= { 2, 2, 2, 2 }
       overlay_stretch	= FALSE
       arrow_direction	= DOWN
     }
@@ -203,7 +202,7 @@ engine "pixmap"
       state				= ACTIVE
       recolorable			= TRUE
       overlay_file			= "Arrows/arrow-down-pressed.png"
-      overlay_border	= { 0, 0, 0, 0 }
+      overlay_border	= { 2, 2, 2, 2 }
       overlay_stretch	= FALSE
       arrow_direction	= DOWN
     }
@@ -214,7 +213,7 @@ engine "pixmap"
       state				= INSENSITIVE
       recolorable			= TRUE
       overlay_file			= "Arrows/arrow-down-insens.png"
-      overlay_border	= { 0, 0, 0, 0 }
+      overlay_border	= { 2, 2, 2, 2 }
       overlay_stretch	= FALSE
       arrow_direction	= DOWN
     }
@@ -224,7 +223,7 @@ engine "pixmap"
       function				= ARROW
       recolorable			= TRUE
       overlay_file			= "Arrows/arrow-left.png"
-      overlay_border	= { 0, 0, 0, 0 }
+      overlay_border	= { 2, 2, 2, 2 }
       overlay_stretch	= FALSE
       arrow_direction	= LEFT
     }
@@ -233,16 +232,16 @@ engine "pixmap"
       function				= ARROW
       recolorable			= TRUE
       overlay_file			= "Arrows/arrow-right.png"
-      overlay_border	= { 0, 0, 0, 0 }
+      overlay_border	= { 2, 2, 2, 2 }
       overlay_stretch	= FALSE
       arrow_direction	= RIGHT
     }
-    image 
+    image
       {
      function			= BOX
 	recolorable		= TRUE
 	file        			= "Others/null.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 	stretch         	= TRUE
       }
   }
@@ -265,7 +264,7 @@ image
 function 	= BOX
 state		= NORMAL
 file 		= "ListHeaders/list_header.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 stretch 	= TRUE
 }
 
@@ -274,7 +273,7 @@ image
 function 	= BOX
 state		= PRELIGHT
 file 		= "ListHeaders/list_header-prelight.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 stretch 	= TRUE
 }
 
@@ -283,7 +282,7 @@ image
 function 	= BOX
 state		= ACTIVE
 file		= "ListHeaders/list_header-pressed.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 stretch 	= TRUE
 }
 image
@@ -291,7 +290,7 @@ image
 function 	= BOX
 state		= SELECTED
 file		= "ListHeaders/list_header-prelight.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 stretch 	= TRUE
 }
 image
@@ -299,7 +298,7 @@ image
 function 	= BOX
 state		= INSENSITIVE
 file		= "ListHeaders/list_header-insens.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 stretch 	= TRUE
 }
 }
@@ -329,7 +328,7 @@ image
 function	= BOX
 shadow	= IN
 file		= "Shadows/shadow-out.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 stretch 	= TRUE
 }
 }
@@ -396,7 +395,7 @@ style "inactivetext2"
 
   fg[PRELIGHT] 		= "#121212"
   fg[NORMAL]            = "#999999"
-  
+
 engine "mist"
  	{
 	}
@@ -422,7 +421,7 @@ style "button"		= "default"
       detail				= "buttondefault"
       recolorable		= TRUE
       file				= "Buttons/button-default.png"
-      border			= {0, 0, 0, 0}
+      border			= {2, 2, 2, 2}
       stretch			= TRUE
     }
     image
@@ -431,7 +430,7 @@ style "button"		= "default"
       state				= PRELIGHT
       recolorable		= TRUE
       file				= "Buttons/button-prelight.png"
-      border			= {0, 0, 0, 0}
+      border			= {2, 2, 2, 2}
       stretch			= TRUE
     }
     image
@@ -439,24 +438,24 @@ style "button"		= "default"
       function			= BOX
       state				= ACTIVE
       file				= "Buttons/button-pressed.png"
-      border			= {0, 0, 0, 0}
+      border			= {2, 2, 2, 2}
       stretch			= TRUE
-    }	
-    image 
+    }
+    image
    {
      function			= BOX
      state				= INSENSITIVE
      file					= "Buttons/button-insensitive.png"
-     border			= {0, 0, 0, 0}
+     border			= {2, 2, 2, 2}
      stretch			= TRUE
     }
-    image 
+    image
     {
       function			= BOX
-      file				= "Buttons/button-normal.png"		
-      border			= {0, 0, 0, 0}
+      file				= "Buttons/button-normal.png"
+      border			= {2, 2, 2, 2}
       stretch			= TRUE
-     }	
+     }
   }
 }
 
@@ -465,12 +464,12 @@ style "button"		= "default"
 
 style "checkradiobutton" {
   engine "pixmap" {
-    image 
+    image
 	{
 	function			= FLAT_BOX
 	recolorable		= TRUE
 	file					= "Check-Radio/highlight.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 	stretch			= TRUE
        }
     }
@@ -490,7 +489,7 @@ style "optionmenu"		= "default"
       recolorable		= TRUE
       state				= PRELIGHT
       file				= "Combo/combo-prelight.png"
-      border			= { 0, 0, 0, 0}
+      border			= { 2, 2, 2, 2}
       stretch			= TRUE
     }
     image
@@ -499,7 +498,7 @@ style "optionmenu"		= "default"
       recolorable		= TRUE
       state				= NORMAL
       file				= "Combo/combo-normal.png"
-      border			= { 0, 0, 0, 0}
+      border			= { 2, 2, 2, 2}
       stretch			= TRUE
     }
 
@@ -509,7 +508,7 @@ style "optionmenu"		= "default"
       recolorable		= TRUE
       state				= ACTIVE
       file				= "Combo/combo-pressed.png"
-      border			= { 0, 0, 0, 0}
+      border			= { 2, 2, 2, 2}
       stretch			= TRUE
     }
  image
@@ -518,7 +517,7 @@ style "optionmenu"		= "default"
       recolorable		= TRUE
       state				= INSENSITIVE
       file				= "Combo/combo-inactive.png"
-      border			= { 0, 0, 0, 0}
+      border			= { 2, 2, 2, 2}
       stretch			= TRUE
     }
     image
@@ -543,7 +542,7 @@ style "optionmenu"		= "default"
       recolorable			= TRUE
       state					= PRELIGHT
       overlay_file			= "Combo/combo-arrow-prelight.png"
-      overlay_border	= { 0, 0, 0, 0 }
+      overlay_border	= { 2, 2, 2, 2 }
       overlay_stretch	= FALSE
     }
   }
@@ -553,9 +552,9 @@ widget_class "*Combo*" style "optionmenu"
 
 style "radiobutton"	= "default"
 {
-  engine "pixmap" 
+  engine "pixmap"
     {
- image 
+ image
 	{
             function        		= OPTION
             recolorable    		= TRUE
@@ -564,7 +563,7 @@ style "radiobutton"	= "default"
             overlay_file    		= "Check-Radio/option1.png"
             overlay_stretch 	= FALSE
         }
- image 
+ image
 	{
             function        		= OPTION
             recolorable     		= TRUE
@@ -573,7 +572,7 @@ style "radiobutton"	= "default"
             overlay_file    		= "Check-Radio/option3.png"
             overlay_stretch 	= FALSE
         }
- image 
+ image
 	{
             function        		= OPTION
             recolorable     		= TRUE
@@ -582,7 +581,7 @@ style "radiobutton"	= "default"
             overlay_file    		= "Check-Radio/option3.png"
             overlay_stretch 	= FALSE
         }
- image 
+ image
 	{
             function        		= OPTION
             recolorable     		= TRUE
@@ -591,7 +590,7 @@ style "radiobutton"	= "default"
             overlay_file    		= "Check-Radio/option1.png"
             overlay_stretch 	= FALSE
         }
- image 
+ image
 	{
             function        		= OPTION
             recolorable     		= TRUE
@@ -600,7 +599,7 @@ style "radiobutton"	= "default"
             overlay_file    		= "Check-Radio/option2.png"
             overlay_stretch 	= FALSE
         }
-  image 
+  image
 	{
             function        		= OPTION
             recolorable     		= TRUE
@@ -609,7 +608,7 @@ style "radiobutton"	= "default"
             overlay_file    		= "Check-Radio/option4.png"
             overlay_stretch 	= FALSE
         }
- image 
+ image
 	{
             function        		= OPTION
             recolorable     		= TRUE
@@ -618,7 +617,7 @@ style "radiobutton"	= "default"
             overlay_file    		= "Check-Radio/option4.png"
             overlay_stretch 	= FALSE
         }
- image 
+ image
 	{
             function        		= OPTION
             recolorable     		= TRUE
@@ -627,13 +626,13 @@ style "radiobutton"	= "default"
             overlay_file    		= "Check-Radio/option1.png"
             overlay_stretch 	= FALSE
         }
-  image 
+  image
 	{
           function        		= FLAT_BOX
           recolorable     		= TRUE
       	stretch				= TRUE
           file            			= "Check-Radio/checklight.png"
-          border          		= { 0, 0, 0, 0 }
+          border          		= { 2, 2, 2, 2 }
         }
     }
 }
@@ -641,9 +640,9 @@ style "radiobutton"	= "default"
 
 style "checkbutton"	= "default"
 {
-  engine "pixmap" 
+  engine "pixmap"
     {
- image 
+ image
 	{
             function        		= CHECK
             recolorable     		= TRUE
@@ -652,7 +651,7 @@ style "checkbutton"	= "default"
             overlay_file    		= "Check-Radio/check1.png"
             overlay_stretch 	= FALSE
         }
- image 
+ image
 	{
             function        		= CHECK
             recolorable     		= TRUE
@@ -661,7 +660,7 @@ style "checkbutton"	= "default"
             overlay_file    		= "Check-Radio/check3.png"
             overlay_stretch 	= FALSE
         }
- image 
+ image
 	{
             function        		= CHECK
             recolorable     		= TRUE
@@ -670,7 +669,7 @@ style "checkbutton"	= "default"
             overlay_file    		= "Check-Radio/check3.png"
             overlay_stretch 	= FALSE
         }
- image 
+ image
 	{
             function        		= CHECK
             recolorable     		= TRUE
@@ -679,7 +678,7 @@ style "checkbutton"	= "default"
             overlay_file    		= "Check-Radio/check1.png"
             overlay_stretch 	= FALSE
         }
- image 
+ image
 	{
             function        		= CHECK
             recolorable     		= TRUE
@@ -688,7 +687,7 @@ style "checkbutton"	= "default"
             overlay_file    		= "Check-Radio/check2.png"
             overlay_stretch 	= FALSE
         }
-  image 
+  image
 	{
             function        		= CHECK
             recolorable     		= TRUE
@@ -697,7 +696,7 @@ style "checkbutton"	= "default"
             overlay_file    		= "Check-Radio/check4.png"
             overlay_stretch 	= FALSE
         }
- image 
+ image
 	{
             function        		= CHECK
             recolorable     		= TRUE
@@ -706,7 +705,7 @@ style "checkbutton"	= "default"
             overlay_file    		= "Check-Radio/check4.png"
             overlay_stretch 	= FALSE
         }
- image 
+ image
     {
     function        		= CHECK
     recolorable     		= TRUE
@@ -715,13 +714,13 @@ style "checkbutton"	= "default"
        overlay_file   		= "Check-Radio/check1.png"
        overlay_stretch 	= FALSE
     }
-    image 
+    image
     {
       function        	= FLAT_BOX
       recolorable     	= TRUE
       stretch			= TRUE
       file            		= "Check-Radio/checklight.png"
-      border          	= { 0, 0, 0, 0 }
+      border          	= { 2,2,2,2 }
     }
   }
 }
@@ -732,8 +731,8 @@ style "checkbutton"	= "default"
 style "entry"			= "default"
 {
 
-  xthickness            			= 0
-  ythickness            			= 0
+  xthickness            			= 2
+  ythickness            			= 2
   GtkWidget::interior_focus	= 1
 
   engine "pixmap"
@@ -743,9 +742,9 @@ style "entry"			= "default"
       function			= FOCUS
       recolorable		= TRUE
       file			= "Shadows/entry-shadow-in.png"
-      border			= { 0,0,0,0 }
+      border			= { 2,2,2,2 }
       stretch			= TRUE
-    }	
+    }
  image
     {
       function			= BOX
@@ -753,9 +752,9 @@ style "entry"			= "default"
 	 shadow			= IN
       state			= NORMAL
       file			= "Shadows/entry-shadow-in.png"
-      border			= { 0,0,0,0 }
+      border			= { 2,2,2,2 }
       stretch			= TRUE
-    }	
+    }
 image
     {
       function			= BOX
@@ -763,9 +762,9 @@ image
 	 shadow			= OUT
       state			= NORMAL
       file			= "Shadows/text-entry.png"
-      border			= { 0,0,0,0 }
+      border			= { 2,2,2,2 }
       stretch			= TRUE
-    }	
+    }
   image
    {
      function			= SHADOW
@@ -773,7 +772,7 @@ image
      shadow			= IN
      recolorable		= FALSE
      file			= "Shadows/text-entry.png"
-      border			= { 0,0,0,0 }
+      border			= { 2,2,2,2 }
      stretch			= TRUE
     }
   }
@@ -784,8 +783,8 @@ image
 style "spinbutton"	= "default"
 {
 
-  xthickness            			= 0
-  ythickness            			= 0
+  xthickness            			= 2
+  ythickness            			= 2
   GtkWidget::interior_focus	= 1
 
   engine "pixmap"
@@ -803,7 +802,7 @@ style "spinbutton"	= "default"
       detail			= "spinbutton_up"
       recolorable		= TRUE
       file			= "Spin/spin-up-bg.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
       overlay_file		= "Spin/arrow-up.png"
       overlay_stretch		= FALSE
@@ -815,7 +814,7 @@ style "spinbutton"	= "default"
       detail			= "spinbutton_up"
       recolorable		= TRUE
       file			= "Spin/spin-up-bg.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
       overlay_file		= "Spin/arrow-up-prelight.png"
       overlay_stretch		= FALSE
@@ -827,7 +826,7 @@ style "spinbutton"	= "default"
       detail			= "spinbutton_up"
       recolorable		= TRUE
       file			= "Spin/spin-up-bg.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
       overlay_file		= "Spin/arrow-up-disable.png"
       overlay_stretch		= FALSE
@@ -839,7 +838,7 @@ style "spinbutton"	= "default"
       detail			= "spinbutton_up"
       recolorable		= TRUE
       file			= "Spin/spin-up-bg.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
     }
 
@@ -851,7 +850,7 @@ style "spinbutton"	= "default"
       detail			= "spinbutton_down"
       recolorable		= TRUE
       file			= "Spin/spin-down-bg.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
       overlay_file		= "Spin/arrow-down.png"
       overlay_stretch		= FALSE
@@ -863,7 +862,7 @@ style "spinbutton"	= "default"
       detail			= "spinbutton_down"
       recolorable		= TRUE
       file			= "Spin/spin-down-bg.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
       overlay_file		= "Spin/arrow-down-prelight.png"
       overlay_stretch		= FALSE
@@ -875,7 +874,7 @@ style "spinbutton"	= "default"
       detail			= "spinbutton_down"
       recolorable		= TRUE
       file			= "Spin/spin-down-bg.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
       overlay_file		= "Spin/arrow-down-disable.png"
       overlay_stretch		= FALSE
@@ -887,7 +886,7 @@ style "spinbutton"	= "default"
       detail			= "spinbutton_down"
       recolorable		= TRUE
       file			= "Spin/spin-down-bg.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
       overlay_file		= "Spin/arrow-down-prelight.png"
       overlay_stretch		= FALSE
@@ -898,9 +897,9 @@ style "spinbutton"	= "default"
       function			= FOCUS
       recolorable		= TRUE
       file			= "Spin/text-entry-focus.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
-    }	
+    }
     image
     {
       function			= SHADOW
@@ -908,7 +907,7 @@ style "spinbutton"	= "default"
       shadow			= IN
       recolorable		= FALSE
       file			= "Spin/text-entry.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
     }
   }
@@ -919,71 +918,71 @@ style "spinbutton"	= "default"
 
 style "scrollbar" = "default"
 {
-  engine "pixmap" 
+  engine "pixmap"
   {
-    image 
+    image
     {
       function			= BOX
       recolorable		= TRUE
       detail				= "trough"
       file				= "Scrollbars/trough-scrollbar-horiz.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
       orientation		= HORIZONTAL
     }
-    image 
+    image
     {
       function			= BOX
       recolorable		= TRUE
       detail				= "trough"
       file				= "Scrollbars/trough-scrollbar-vert.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
       orientation		= VERTICAL
     }
 
 ###########x SLIDERS ##################x
 
-  image 
+  image
     {
       function				= SLIDER
       recolorable			= TRUE
       state           		= NORMAL
-      file					= "Scrollbars/slider-horiz.png" 
-      border			= { 0, 0, 0, 0 }
+      file					= "Scrollbars/slider-horiz.png"
+      border			= { 2, 2, 2, 2 }
       stretch				= TRUE
       orientation			= HORIZONTAL
     }
-  image 
+  image
     {
       function				= SLIDER
       recolorable			= TRUE
       state           		= ACTIVE
       shadow				= IN
-      file					= "Scrollbars/slider-horiz.png" 
-      border			= { 0, 0, 0, 0 }
+      file					= "Scrollbars/slider-horiz.png"
+      border			= { 2, 2, 2, 2 }
       stretch				= TRUE
       orientation			= HORIZONTAL
 
     }
-    image 
+    image
     {
       function				= SLIDER
       recolorable			= TRUE
       state           		= PRELIGHT
-      file					= "Scrollbars/slider-horiz-prelight.png" 
-      border			= { 0, 0, 0, 0 }
+      file					= "Scrollbars/slider-horiz-prelight.png"
+      border			= { 2, 2, 2, 2 }
       stretch				= TRUE
       orientation			= HORIZONTAL
 
     }
-    image 
+    image
     {
       function				= SLIDER
       recolorable			= TRUE
       state           		= INSENSITIVE
       file					= "Scrollbars/slider-horiz-insens.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch				= TRUE
       orientation			= HORIZONTAL
 
@@ -991,47 +990,47 @@ style "scrollbar" = "default"
 
 #############x verticals################xx
 
- image 
+ image
     {
       function				= SLIDER
       recolorable			= TRUE
       state           		= NORMAL
-      file					= "Scrollbars/slider-vert.png" 
-      border				= { 0, 0, 0, 0 }
+      file					= "Scrollbars/slider-vert.png"
+      border				= { 2, 2, 2, 2 }
       stretch				= TRUE
       orientation			= VERTICAL
 
     }
-   image 
+   image
     {
       function				= SLIDER
       recolorable			= TRUE
       state           		= ACTIVE
       shadow				= IN
-      file					= "Scrollbars/slider-vert.png" 
-      border				= { 0, 0, 0, 0 }
+      file					= "Scrollbars/slider-vert.png"
+      border				= { 2, 2, 2, 2 }
       stretch				= TRUE
       orientation			= VERTICAL
 
     }
-    image 
+    image
     {
       function				= SLIDER
       recolorable			= TRUE
       state           		= PRELIGHT
-      file					= "Scrollbars/slider-vert-prelight.png" 
-      border				= { 0, 0, 0, 0 }
+      file					= "Scrollbars/slider-vert-prelight.png"
+      border				= { 2, 2, 2, 2 }
       stretch				= TRUE
       orientation			= VERTICAL
 
     }
-    image 
+    image
     {
       function				= SLIDER
       recolorable			= TRUE
       state           		= INSENSITIVE
       file					= "Scrollbars/slider-vert-insens.png"
-      border				= { 0, 0, 0, 0 }
+      border				= { 2, 2, 2, 2 }
       stretch				= TRUE
       orientation			= VERTICAL
 
@@ -1041,7 +1040,7 @@ style "scrollbar" = "default"
 
 ########### Steppers ######################
 #### UP #######
-    image 
+    image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1050,7 +1049,7 @@ style "scrollbar" = "default"
       stretch				= TRUE
       arrow_direction	= UP
     }
- image 
+ image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1059,7 +1058,7 @@ style "scrollbar" = "default"
       stretch				= TRUE
       arrow_direction	= UP
     }
- image 
+ image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1068,7 +1067,7 @@ style "scrollbar" = "default"
       stretch				= TRUE
       arrow_direction	= UP
     }
- image 
+ image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1080,7 +1079,7 @@ style "scrollbar" = "default"
 
  ######### DOWN ############
 
-    image 
+    image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1089,7 +1088,7 @@ style "scrollbar" = "default"
       stretch				= TRUE
       arrow_direction	= DOWN
     }
- image 
+ image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1098,7 +1097,7 @@ style "scrollbar" = "default"
       stretch				= TRUE
       arrow_direction	= DOWN
     }
- image 
+ image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1107,7 +1106,7 @@ style "scrollbar" = "default"
       stretch				= TRUE
       arrow_direction	= DOWN
     }
- image 
+ image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1119,7 +1118,7 @@ style "scrollbar" = "default"
 
 ############ RIGHT ################
 
-    image 
+    image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1128,7 +1127,7 @@ style "scrollbar" = "default"
       stretch				= TRUE
       arrow_direction	= RIGHT
     }
- image 
+ image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1137,7 +1136,7 @@ style "scrollbar" = "default"
       stretch				= TRUE
       arrow_direction	= RIGHT
     }
- image 
+ image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1146,7 +1145,7 @@ style "scrollbar" = "default"
       stretch				= TRUE
       arrow_direction	= RIGHT
     }
- image 
+ image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1158,7 +1157,7 @@ style "scrollbar" = "default"
 
 ############### LEFT ###################
 
-    image 
+    image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1167,7 +1166,7 @@ style "scrollbar" = "default"
       stretch				= TRUE
       arrow_direction	= LEFT
     }
-  image 
+  image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1176,7 +1175,7 @@ style "scrollbar" = "default"
       stretch				= TRUE
       arrow_direction	= LEFT
     }
-  image 
+  image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1185,7 +1184,7 @@ style "scrollbar" = "default"
       stretch				= TRUE
       arrow_direction	= LEFT
     }
-  image 
+  image
     {
       function				= STEPPER
       recolorable			= TRUE
@@ -1200,30 +1199,30 @@ style "scrollbar" = "default"
 ##################### PROGRESSBAR ###################x
 
 style "progressbar" {
-  
+
   fg[NORMAL]       	        = "#999999"
   fg[PRELIGHT]       		= "#121212"
-  
-  xthickness            		= 0
-  ythickness            		= 0
 
-  engine "pixmap" 
+  xthickness            		= 2
+  ythickness            		= 2
+
+  engine "pixmap"
   {
     image
     {
       function				= BOX
       detail					= "trough"
       file					= "ProgressBar/trough-progressbar-horiz.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
       stretch				= TRUE
-      orientation			= HORIZONTAL 
+      orientation			= HORIZONTAL
     }
     image
     {
       function				= BOX
       detail					= "trough"
       file					= "ProgressBar/trough-progressbar-vert.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
       stretch				= TRUE
       orientation			= VERTICAL
     }
@@ -1232,16 +1231,16 @@ style "progressbar" {
       function				= BOX
       detail					= "bar"
       file					= "ProgressBar/progressbar-horiz.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
       stretch				= TRUE
-      orientation			= HORIZONTAL 
-    } 
+      orientation			= HORIZONTAL
+    }
     image
     {
       function				= BOX
       detail					= "bar"
       file					= "ProgressBar/progressbar-vert.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
       stretch				= TRUE
       stretch				= TRUE
       orientation			= VERTICAL
@@ -1252,63 +1251,63 @@ style "progressbar" {
 ############################# RANGE #######################
 
 style "range"			= "default"
-{	
-  engine "pixmap" 
+{
+  engine "pixmap"
   {
-    image 
+    image
     {
       function			= BOX
       recolorable		= TRUE
       detail				= "trough"
       file				= "Range/trough-horizontal.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
       orientation		= HORIZONTAL
-    }	
-    image 
+    }
+    image
     {
       function			= BOX
       recolorable		= TRUE
       detail				= "trough"
       file				= "Range/trough-vertical.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
       orientation		= VERTICAL
     }
 
 ############### the sliders ###############
 
-    image 
+    image
     {
       function				= SLIDER
       recolorable			= TRUE
       state           		= NORMAL
       file					= "Range/null.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch				= TRUE
       overlay_file			= "Range/slider-horiz.png"
       overlay_stretch	= TRUE
       orientation			= HORIZONTAL
     }
-    image 
+    image
     {
       function				= SLIDER
       recolorable			= TRUE
      state           			= PRELIGHT
       file					= "Range/null.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch				= TRUE
       overlay_file			= "Range/slider-horiz-prelight.png"
       overlay_stretch	= TRUE
       orientation			= HORIZONTAL
     }
-    image 
+    image
     {
       function				= SLIDER
       recolorable			= TRUE
       state           		= INSENSITIVE
       file					= "Range/null.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch				= TRUE
       overlay_file			= "Range/slider-horiz.png"
       overlay_stretch	= TRUE
@@ -1317,37 +1316,37 @@ style "range"			= "default"
 
 ######################### VERTICAL ###########################
 
-    image 
+    image
     {
       function				= SLIDER
       recolorable			= TRUE
       state           		= NORMAL
       file					= "Range/null.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch				= TRUE
       overlay_file			= "Range/slider-vert.png"
       overlay_stretch	= TRUE
       orientation			= VERTICAL
     }
-    image 
+    image
     {
       function				= SLIDER
       recolorable			= TRUE
      state           			= PRELIGHT
       file					= "Range/null.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch				= TRUE
       overlay_file			= "Range/slider-vert-prelight.png"
       overlay_stretch	= TRUE
       orientation			= VERTICAL
     }
-    image 
+    image
     {
       function				= SLIDER
       recolorable			= TRUE
       state           		= INSENSITIVE
       file					= "Range/null.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch				= TRUE
       overlay_file			= "Range/slider-vert.png"
       overlay_stretch	= TRUE
@@ -1366,7 +1365,7 @@ style "toolbar"
 		{
 			function	= BOX
 			file		= "Range/null.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 			stretch	= TRUE
     		}
  	}
@@ -1384,19 +1383,19 @@ class "*Toolbar" style "toolbar"
 
 style "toolbuttons" = "default"
 {
-  xthickness            			= 0
-  ythickness            			= 0
-  GtkWidget::focus_padding = 0
+  xthickness            			= 2
+  ythickness            			= 2
+  GtkWidget::focus_padding = 2
 
 	engine "pixmap" {
-      
+
 image
 		{
 			function        		= BOX
 			recolorable     		= TRUE
 			state					= NORMAL
 			file            			= "Toolbar/toolbutton-normal.png"
-			border          		= { 0, 0, 0, 0 }
+			border          		= { 2, 2, 2, 2 }
 			stretch         		= TRUE
 		}
 image
@@ -1405,7 +1404,7 @@ image
 			recolorable     		= TRUE
 			state					= PRELIGHT
 			file            			= "Toolbar/toolbutton-prelight.png"
-			border          		= { 0, 0, 0, 0 }
+			border          		= { 2, 2, 2, 2 }
 			stretch         		= TRUE
 		}
 image
@@ -1414,18 +1413,18 @@ image
 			recolorable     		= TRUE
 			state					= ACTIVE
 			file            			= "Toolbar/toolbutton-pressed.png"
-			border          		= { 0, 0, 0, 0 }
+			border          		= { 2, 2, 2, 2 }
 			stretch         		= TRUE
-		}  
+		}
 image
 		{
 			function        		= BOX
 			recolorable     		= TRUE
 			state					= INSENSITIVE
 			file            			= "Toolbar/toolbutton-normal.png"
-			border          		= { 0, 0, 0, 0 }
+			border          		= { 2, 2, 2, 2 }
 			stretch         		= TRUE
-		}  
+		}
 	}
 }
 widget_class "*Tool*GtkToggleButton" style "toolbuttons"
@@ -1440,8 +1439,8 @@ style "menubar" = "default"
   fg[SELECTED]      = "#121212"
   text[SELECTED]      = "#121212"
 
-xthickness            = 0
-ythickness            = 0
+xthickness            = 2
+ythickness            = 2
    
 }
 
@@ -1450,8 +1449,8 @@ ythickness            = 0
 
 style "menu"			= "default"
 {
-xthickness			= 0
-ythickness			= 0
+xthickness			= 2
+ythickness			= 2
 
   engine "pixmap"
   {
@@ -1461,7 +1460,7 @@ ythickness			= 0
       recolorable    	= TRUE
       detail				= "menu"
       file				= "Menu-Menubar/menu.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
     }
   }
@@ -1470,9 +1469,9 @@ ythickness			= 0
 ########################### Menuitem #############################
 style "menuitem"	= "default"
 {
-  xthickness				= 0
-  fg[PRELIGHT] 		= "#121212"  
-   
+  xthickness				= 2
+  fg[PRELIGHT] 		= "#121212"
+
    engine "pixmap"
   {
     image
@@ -1480,7 +1479,7 @@ style "menuitem"	= "default"
       function			= BOX
       recolorable		= TRUE
       file				= "Menu-Menubar/menuitem.png"
-      border			= { 0, 0, 0, 0 }
+      border			= { 2, 2, 2, 2 }
       stretch			= TRUE
     }
     image
@@ -1522,158 +1521,158 @@ style "tearoffmenuitem"	= "menuitem"
 style "notebook"		= "default"
 {
 
-  xthickness            			= 0
-  ythickness            			= 0
-  engine "pixmap" 
+  xthickness            			= 2
+  ythickness            			= 2
+  engine "pixmap"
     {
-    image 
+    image
       {
      function			= EXTENSION
 	recolorable		= TRUE
 	state				= ACTIVE
 	file					= "Tabs/tab-bottom.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 	stretch			= TRUE
 	gap_side			= TOP
       }
-    image 
+    image
       {
      function			= EXTENSION
 	recolorable		= TRUE
 	state				= ACTIVE
 	file					= "Tabs/tab-top.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 	stretch			= TRUE
 	gap_side			= BOTTOM
       }
-    image 
+    image
       {
      function			= EXTENSION
 	recolorable		= TRUE
 	state				= ACTIVE
 	file					= "Tabs/tab-left.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 	stretch			= TRUE
 	gap_side			= RIGHT
       }
-    image 
+    image
       {
      function			= EXTENSION
 	recolorable		= TRUE
 	state				= ACTIVE
 	file					= "Tabs/tab-right.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 	stretch			= TRUE
 	gap_side			= LEFT
-      }	
-    image 
+      }
+    image
       {
      function			= EXTENSION
 	recolorable		= TRUE
 	file					= "Tabs/tab-top-active.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 	stretch			= TRUE
 	gap_side			= BOTTOM
       }
-    image 
+    image
       {
      function			= EXTENSION
 	recolorable		= TRUE
 	file					= "Tabs/tab-bottom-active.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 	stretch			= TRUE
 	gap_side			= TOP
       }
-    image 
+    image
       {
      function			= EXTENSION
 	recolorable		= TRUE
 	file					= "Tabs/tab-left-active.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 	stretch			= TRUE
 	gap_side			= RIGHT
       }
-    image 
+    image
       {
      function			= EXTENSION
 	recolorable		= TRUE
 	file					= "Tabs/tab-right-active.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 	stretch			= TRUE
 	gap_side			= LEFT
       }
 
 # How to draw boxes with a gap on one side (ie the page of a notebook)
 
-    image 
+    image
       {
      function				= BOX_GAP
 	recolorable			= TRUE
-	file				= "Tabs/notebook.png" 
-  border			= { 0, 0, 0, 0 }
+	file				= "Tabs/notebook.png"
+  border			= { 2, 2, 2, 2 }
 	stretch				= TRUE
 	gap_file			= "Tabs/gap-top.png"
-	gap_border     			= { 0, 0, 0, 0 }
+	gap_border     			= { 2, 2, 2, 2 }
 	gap_start_file			= "Range/null.png"
-	gap_start_border		= { 0, 0, 0, 0 }
+	gap_start_border		= { 2, 2, 2, 2 }
 	gap_end_file			= "Range/null.png"
-	gap_end_border			= { 0, 0, 0, 0 }
+	gap_end_border			= { 2, 2, 2, 2 }
 	gap_side			= TOP
       }
-    image 
+    image
       {
      function				= BOX_GAP
 	recolorable			= TRUE
 	file				= "Tabs/notebook.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 	stretch				= TRUE
 	gap_file			= "Tabs/gap-bottom.png"
-	gap_border			= { 0, 0, 0, 0 }
+	gap_border			= { 2, 2, 2, 2 }
 	gap_start_file			= "Range/null.png"
-	gap_start_border		= { 0, 0, 0, 0 }
+	gap_start_border		= { 2, 2, 2, 2 }
 	gap_end_file			= "Range/null.png"
-	gap_end_border			= { 0, 0, 0, 0 }
+	gap_end_border			= { 2, 2, 2, 2 }
 	gap_side			= BOTTOM
       }
-    image 
+    image
       {
      function				= BOX_GAP
 	recolorable			= TRUE
 	file				= "Tabs/notebook.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 	stretch				= TRUE
 	gap_file			= "Tabs/gap-left.png"
-	gap_border			= { 0,0,0,0 }
+	gap_border			= { 2,2,2,2 }
 	gap_start_file			= "Range/null.png"
-	gap_start_border		= { 0, 0, 0, 0 }
+	gap_start_border		= { 2, 2, 2, 2 }
 	gap_end_file			= "Range/null.png"
-	gap_end_border			= { 0, 0, 0, 0 }
+	gap_end_border			= { 2, 2, 2, 2 }
 	gap_side			= LEFT
       }
-    image 
+    image
       {
      function				= BOX_GAP
 	recolorable			= TRUE
-	file				= "Tabs/notebook.png" 
-  border			= { 0, 0, 0, 0 }
+	file				= "Tabs/notebook.png"
+  border			= { 2, 2, 2, 2 }
 	stretch				= TRUE
 	gap_file			= "Tabs/gap-right.png"
-	gap_border			= { 0,0,0,0 }
+	gap_border			= { 2,2,2,2 }
 	gap_start_file			= "Range/null.png"
-	gap_start_border		= { 0, 0, 0, 0 }
+	gap_start_border		= { 2, 2, 2, 2 }
 	gap_end_file			= "Range/null.png"
-	gap_end_border			= { 0, 0, 0, 0 }
+	gap_end_border			= { 2, 2, 2, 2 }
 	gap_side			= RIGHT
       }
 
 # How to draw the box of a notebook when it isnt attached to a tab
 
-    image 
+    image
       {
      function			= BOX
 	recolorable		= TRUE
 	file					= "Tabs/notebook.png"
-  border			= { 0, 0, 0, 0 }
+  border			= { 2, 2, 2, 2 }
 	stretch			= TRUE
       }
   }
@@ -1688,24 +1687,24 @@ style "tooltips"	= "default"
 
 style "ruler"		= "default"
 {
-  engine "pixmap" 
+  engine "pixmap"
   {
-    image 
+    image
     {
         function		= BOX
 	recolorable		= TRUE
 	detail			= "vruler"
 	file			= "Others/ruler.png"
-	border			= { 0, 0, 0, 0 }
+	border			= { 2, 2, 2, 2 }
 	stretch			= TRUE
     }
-    image 
+    image
     {
         function		= BOX
 	recolorable		= TRUE
 	detail			= "hruler"
 	file			= "Others/ruler.png"
-	border			= { 0, 0, 0, 0 }
+	border			= { 2, 2, 2, 2 }
 	stretch			= TRUE
     }
   }
@@ -1760,7 +1759,7 @@ style "layout"	= "default"
      shadow		= IN
      recolorable	= FALSE
      file			= "Shadows/text.png"
-	border			= { 0, 0, 0, 0 }
+	border			= { 2, 2, 2, 2 }
      stretch		= TRUE
    }
     image
@@ -1770,7 +1769,7 @@ style "layout"	= "default"
       state			= NORMAL
       file			= "Buttons/button-normal.png"
       recolorable	= TRUE
-	border			= { 0, 0, 0, 0 }
+	border			= { 2, 2, 2, 2 }
       stretch		= TRUE
     }
   }
@@ -1783,8 +1782,8 @@ style "statusbar"		= "default"
 
 #	xthickness = 1
 #	ythickness = 1
-	
-	engine "pixmap" 
+
+	engine "pixmap"
 	{
 	    image
 	    {
@@ -1793,8 +1792,8 @@ style "statusbar"		= "default"
 		#state			= NORMAL
 		detail		= "statusbar"
 		overlay_file	= "Handles/resize-grip.png"
-		
-		overlay_border	= {0,0,0,0 }
+
+		overlay_border	= {2,2,2,2 }
 		overlay_stretch	= FALSE
 	    }
       }
@@ -1824,7 +1823,7 @@ style "SPbutton"
       shadow		= IN
       recolorable	= TRUE
       file			= "Shadows/shadow-out.png"
-	border			= { 0, 0, 0, 0 }
+	border			= { 2, 2, 2, 2 }
       stretch		= TRUE
     }
     image
@@ -1862,7 +1861,7 @@ widget_class "*.<MenuItem>."		style "menuitem"
 class "GtkMenuItem"           		style "menuitem"
 class "GtkTearoffMenuItem"		style "menuitem"
 class "GtkNotebook"      		style "notebook"
-class "GtkToolbar"       		style "flat"					
+class "GtkToolbar"       		style "flat"
 class "GtkHandleBox"    		style "handlebox"
 class "GtkEventBox"    			style "flat"
 class "GtkPaned"       			style "handlebox"
