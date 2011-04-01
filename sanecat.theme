@@ -2,12 +2,13 @@
 # Maintainer: Magnus Woldrich <trapd00r@trapd00r.se>
 # Last updated: Fri Jun 18 06:51:46 CEST 2010
 #
-# For best experience: 
+# For best experience:
 # /statusbar window remove time
 # /statusbar window remove user
 # /statusbar window remove window_empty
 # /statusbar topic DISABLE
 # /statusbar prompt placement top
+# /set uberprompt_format %y$*%c chr(5175)
 #
 # Mandatory: Install and configure vimmode.pl [0]
 # Optional:  Install and configure uberprompt.pl [1], so we can use
@@ -17,6 +18,7 @@
 # 1: https://github.com/shabble/irssi-scripts/blob/master/prompt_info
 # 2: https://github.com/shabble/irssi-scripts/tree/master/history-search
 # 3: https://github.com/shabble/irssi-scripts
+#
 
 # default foreground color (%N) - -1 is the "default terminal color"
 default_color = "-1";
