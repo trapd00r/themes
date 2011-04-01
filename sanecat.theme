@@ -7,6 +7,16 @@
 # /statusbar window remove user
 # /statusbar window remove window_empty
 # /statusbar topic DISABLE
+# /statusbar prompt placement top
+#
+# Mandatory: Install and configure vimmode.pl [0]
+# Optional:  Install and configure uberprompt.pl [1], so we can use
+# rl_reverse_search.pl [2] and other goodies [3].
+#
+# 0: https://github.com/shabble/irssi-scripts/tree/master/vim-mode
+# 1: https://github.com/shabble/irssi-scripts/blob/master/prompt_info
+# 2: https://github.com/shabble/irssi-scripts/tree/master/history-search
+# 3: https://github.com/shabble/irssi-scripts
 
 # default foreground color (%N) - -1 is the "default terminal color"
 default_color = "-1";
