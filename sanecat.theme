@@ -1,6 +1,6 @@
 # sanecat irssi theme
-# Maintainer: Magnus Woldrich <trapd00r@trapd00r.se>
-# Last updated: Fri Jun 18 06:51:46 CEST 2010
+# Maintainer: Magnus Woldrich <m@japh.se>
+# Last updated: 2011-05-06 08:41:53
 #
 # For best experience:
 # /statusbar window remove time
@@ -139,10 +139,10 @@ abstracts = {
 
   # own private message in query
   ownprivmsgnick = "{msgnick  $*}";
-  ownprivnick = "%w$*%n";
+  ownprivnick = "%B$*%n";
 
   # private message in query
-  privmsgnick = "{msgnick  %r$*%n}";
+  privmsgnick = "{msgnick  %G$*%n}";
 
   ##
   ## Actions (/ME stuff)
