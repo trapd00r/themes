@@ -112,8 +112,8 @@ abstracts = {
   #  privmsgnick = "%K{msgnick  %R$*%K}%n";
 
   # $0 = nick mode, $1 = nick
-  ownmsgnick = "{msgnick $0 $1-}%g";
-  ownnick = "%g$*%n";
+  ownmsgnick = "{msgnick $0 $1-}%K";
+  ownnick = "%k$*%n";
 
   # public message in channel, $0 = nick mode, $1 = nick
   pubmsgnick = "{msgnick $0$1-}";
@@ -173,14 +173,14 @@ abstracts = {
   ##
 
   # whois
-  whois = " %r¤ %W$[8]0%n %r¤  %w$1-%n";
+  whois = " %r? %W$[8]0%n %r?  %w$1-%n";
 
   # notices
   ownnotice = "[%w$0!%r$1-]%n ";
   notice = "[%rnotice%K(%n$*%K)%n] ";
   pubnotice_channel = "%R:%R$*";
   pvtnotice_host = "!%K$*%n";
-  servernotice = "%g¤ %w$*%g ¤%n %_";
+  servernotice = "%g? %w$*%g ?%n %_";
 
   # CTCPs
   ownctcp = "[%w$0!%c$1-] ";
@@ -196,7 +196,7 @@ abstracts = {
   netjoin = "%G$*%n";
 
   # /names list
-  names_prefix = "           %r¤%n ";
+  names_prefix = "           %r?%n ";
   names_nick = "[%_$0%_$1-] ";
   names_nick_op = "%g{names_nick $*}%n";
   names_nick_halfop = "%r{names_nick $*}%n";
@@ -318,7 +318,7 @@ formats = {
 
   # kills.pl reformat
   "Irssi::Script::kills" = {
-    kill_public = "%rkilled     ¤%n {channick %w$0%n}!{chanhost $1%n} {reason %w$4%n} by {nick %W$2%n}$3";
+    kill_public = "%rkilled     ?%n {channick %w$0%n}!{chanhost $1%n} {reason %w$4%n} by {nick %W$2%n}$3";
   };
 };
 
